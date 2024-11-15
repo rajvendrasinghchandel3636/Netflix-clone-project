@@ -1,0 +1,277 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: ;
+
+
+}
+
+body {
+    background-color: black;
+}
+
+.main {
+    background-image: url(assets/img/bg.jpg);
+    background-position: center center;
+    background-size: , max(1200px, 100vw);
+    height: 70vh;
+    position: relative;
+}
+
+.main .box {
+    height: 70vh;
+    width: 100%;
+    opacity: 0.44;
+    background-color: black;
+    position: absolute;
+    top: 0%;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    max-width: 80vw;
+    margin: auto;
+    justify-content: space-around;
+    height: 62px;
+}
+
+nav img {
+    color: red;
+    width: 114px;
+    position: relative;
+    z-index: 10;
+}
+
+nav button {
+    position: relative;
+    z-index: 10;
+
+}
+
+.hero {
+    height: 100% - 62px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    position: relative;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    gap: 19px;
+    padding: 30px;
+}
+
+.hero>:first-child {
+    font-weight: 800;
+    font-size: 38px;
+    text-align: center;
+
+}
+
+.hero>:nth-child(2) {
+
+    font-weight: 600;
+    font-size: 24px;
+    text-align: center;
+}
+
+.hero> :nth-child(3) {
+    font-weight: 600;
+    font-size: 18px;
+    text-align: center;
+
+}
+
+.line {
+    height: 5px;
+    background-color: grey;
+    margin-top: 8rem;
+}
+
+.btn {
+    padding: 3px 8px;
+    font-weight: bold;
+    background-color: white;
+    border-radius: 0.4rem;
+}
+
+.redbtn {
+    background-color: red;
+
+    color: white;
+}
+
+.redsi {
+
+    background-color: red;
+    color: white;
+}
+
+.eng {
+    background: transparent;
+    color: white;
+    border: 0.2rem solid grey;
+}
+
+.inputmail {
+    background: black;
+    color: white;
+    border: 1px solid white;
+    border-radius: 0.2rem;
+    padding: 4px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 0.8rem;
+    width: 11rem;
+
+
+}
+
+.secfirst {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.secimg2 {
+    position: relative;
+    display: flex;
+    left: 10%;
+    top: 20%;
+}
+
+.secimg3 {
+    position: absolute;
+    height: 16rem;
+    left: 57%;
+    top: 94%;
+    margin-top: 9rem;
+}
+
+.secfirst .txt {
+    display: flex;
+    justify-content: flex-start;
+    text-shadow: 4px 5px 6px rgb(194, 62, 108);
+    position: relative;
+    color: white;
+    font-size: 2rem;
+
+}
+
+.secfirst .txt pre {
+    color: red;
+    text-decoration: none;
+    font-style: normal;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-shadow: none;
+}
+
+.lineb {
+    height: 5px;
+    background-color: grey;
+    margin-top: 8rem;
+}
+
+.secimgb {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.secimg4 {
+    margin-left: 24rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.secimgb> :nth-child(2) {
+    color: white;
+    font-size: 2.5rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    margin-right: 19rem;
+    margin-bottom: 5rem;
+    position: relative;
+}
+
+.divcont {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    line-height: 2.7rem;
+
+}
+
+.divcont :nth-child(1) {
+    font-size: 2rem;
+    display: inline-block;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-right: 17em;
+    font: bolder;
+
+}
+
+.divcont :nth-child(2) {
+    font-size: 1.2rem;
+    font: bolder;
+    margin-top: 4px;
+    margin-right: 20rem;
+    display: inline-block;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.linec {
+    height: 5px;
+    background-color: grey;
+    margin-top: 8rem;
+}
+
+.sectwo {
+    height: 60vh;
+}
+
+.faqbox {
+    height: 60vh;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+    .faqbox h2{
+        color: white;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        margin-bottom: 19rem;
+        margin-left: 3rem;
+        position: absolute;
+    }
+.faqquessec{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    transition: all 1s ease-out;    
+}
+.faqques{
+    color: white;
+    border: 2px solid black;
+    line-height: 1.6rem;
+    margin-right: 40rem;
+    font-size:1.7rem;
+    background: grey;
+    width: 100%;
+    border: 2px solid black;
+    transition: all 1s ease-out;
+}
+.faqquessec svg {
+    filter: invert(1);
+}
+.faqques:hover{
+    background-color: brown;
+}

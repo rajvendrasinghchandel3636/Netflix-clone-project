@@ -278,7 +278,19 @@ nav button {
 
 
 
-/* Mobile Devices (up to 600px) */
+/* Default (for large screens) */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Mobile Devices (max-width: 600px) */
 @media screen and (max-width: 600px) {
     .main {
         height: 50vh;
@@ -289,6 +301,11 @@ nav button {
         flex-direction: column;
         align-items: center;
         text-align: center;
+        gap: 10px;
+    }
+
+    nav img {
+        width: 80px;
     }
 
     .hero {
@@ -296,60 +313,64 @@ nav button {
         text-align: center;
     }
 
-    .hero>:first-child {
+    .hero > :first-child {
         font-size: 24px;
     }
 
-    .hero>:nth-child(2),
-    .hero>:nth-child(3) {
+    .hero > :nth-child(2),
+    .hero > :nth-child(3) {
         font-size: 16px;
+    }
+
+    .hero div {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
+
+    .inputmail {
+        width: 90%;
     }
 
     .secfirst {
         flex-direction: column;
         text-align: center;
+        align-items: center;
     }
 
     .secimg2,
     .secimg3 {
         width: 100%;
-        left: 0;
-        top: 0;
+        height: auto;
+        position: static;
     }
 
     .secimgb {
         flex-direction: column;
         text-align: center;
-        margin-left: 0;
+        align-items: center;
     }
 
     .divcont {
-        margin: 0;
-        padding: 10px;
         text-align: center;
-    }
-
-    .divcont :nth-child(1),
-    .divcont :nth-child(2) {
-        margin-right: 0;
-        font-size: 1.5rem;
+        padding: 10px;
     }
 
     .faqbox {
-        height: auto;
         padding: 20px;
+        text-align: center;
     }
 
     .faqbox h2 {
         font-size: 1.5rem;
-        margin-bottom: 2rem;
-        text-align: center;
+        margin-bottom: 1rem;
     }
 
     .faqques {
         font-size: 1.2rem;
+        padding: 10px;
         width: 100%;
-        margin-right: 0;
     }
 }
 
@@ -359,36 +380,46 @@ nav button {
         height: 60vh;
     }
 
+    nav {
+        justify-content: space-between;
+        padding: 10px;
+    }
+
+    nav img {
+        width: 90px;
+    }
+
     .hero {
         padding: 30px;
         text-align: center;
     }
 
-    .hero>:first-child {
+    .hero > :first-child {
         font-size: 32px;
     }
 
-    .hero>:nth-child(2),
-    .hero>:nth-child(3) {
+    .hero > :nth-child(2),
+    .hero > :nth-child(3) {
         font-size: 20px;
     }
 
     .secfirst {
         flex-direction: column;
+        text-align: center;
         align-items: center;
     }
 
     .secimg2,
     .secimg3 {
-        left: 0;
-        top: 0;
-        width: 90%;
+        width: 80%;
+        height: auto;
+        position: static;
     }
 
     .secimgb {
         flex-direction: column;
         text-align: center;
-        margin-left: 0;
+        align-items: center;
     }
 
     .divcont {
@@ -416,17 +447,25 @@ nav button {
         height: 70vh;
     }
 
+    nav {
+        max-width: 80vw;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
     .hero {
         padding: 40px;
         text-align: center;
     }
 
-    .hero>:first-child {
+    .hero > :first-child {
         font-size: 38px;
     }
 
-    .hero>:nth-child(2),
-    .hero>:nth-child(3) {
+    .hero > :nth-child(2),
+    .hero > :nth-child(3) {
         font-size: 24px;
     }
 
@@ -438,11 +477,13 @@ nav button {
     .secimg2 {
         left: 10%;
         top: 20%;
+        width: 50%;
     }
 
     .secimg3 {
         left: 57%;
         top: 94%;
+        width: 50%;
     }
 
     .secimgb {
